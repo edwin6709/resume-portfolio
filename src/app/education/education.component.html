@@ -1,0 +1,50 @@
+<section class="education-section">
+  <h2>Education</h2>
+  
+  <div class="education-list">
+    <div class="education-item" *ngFor="let edu of educationHistory; let i = index">
+      <div class="education-header" (click)="toggleExpand(i)">
+        <div class="education-main">
+          <h3>{{ edu.institution }}</h3>
+          <div class="degree-info">
+            <span class="degree">{{ edu.degree }}, {{ edu.fieldOfStudy }}</span>
+          </div>
+        </div>
+        <div class="education-meta">
+          <span class="period">{{ edu.period }}</span>
+          <span class="location">{{ edu.location }}</span>
+        </div>
+        <span class="expand-icon">{{ expandedItem === i ? '' : '+' }}</span>
+      </div>
+      
+      <div class="education-details" *ngIf="expandedItem === i">
+        <p *ngIf="edu.description">{{ edu.description }}</p>
+        
+        <div class="honors" *ngIf="edu.honors && edu.honors.length">
+          <h4>Honors & Awards:</h4>
+          <ul>
+            <li *ngFor="let honor of edu.honors">{{ honor }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+
+Add this back when we are done with Udemy. 
+
+  <div class="certifications" *ngIf="certifications.length">
+    <h3>Certifications</h3>
+    <div class="certification-list">
+      <div class="certification-item" *ngFor="let cert of certifications">
+        <h4>{{ cert.title }}</h4>
+        <div class="certification-meta">
+          <span class="issuer">{{ cert.issuer }}</span>
+          <span class="date">{{ cert.date }}</span>
+          <span class="credential-id" *ngIf="cert.credentialId">ID: {{ cert.credentialId }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+</section>

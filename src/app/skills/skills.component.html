@@ -1,0 +1,33 @@
+<section class="skills-section">
+  <h2>Technical Skills</h2>
+  
+  <div class="skills-container">
+    <div class="skill-category" *ngFor="let category of skillCategories">
+      <div class="category-header">
+        <span class="category-icon">{{ category.icon }}</span>
+        <h3>{{ category.name }}</h3>
+      </div>
+      
+      <div class="skills-list">
+        <div class="skill-item" *ngFor="let skill of category.skills">
+          <div class="skill-info">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-experience" *ngIf="skill.years">
+              {{ getExperienceLevel(skill.years) }} ({{ skill.years }} year{{ skill.years > 1 ? 's' : '' }})
+            </span>
+            <span class="skill-last-used" *ngIf="skill.lastUsed">
+              {{ skill.lastUsed === 'current' ? 'Currently using' : 'Last used in ' + skill.lastUsed }}
+            </span>
+          </div>
+          
+          <div class="skill-level">
+            <div class="level-bar" [class]="getSkillLevelClass(skill.level)">
+              <div class="level-fill" [style.width.%]="skill.level * 20"></div>
+            </div>
+            <span class="level-number">{{ skill.level }}/5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,90 @@
+/* app.component.css */
+
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  line-height: 1.6;
+  background: white;
+}
+
+.resume-content {
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Print styles */
+@media print {
+  .resume-container {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .resume-content {
+    display: block;
+  }
+
+  .left-column, .right-column {
+    display: block;
+    width: 100%;
+  }
+
+  app-header {
+    page-break-after: avoid;
+  }
+
+  app-about, app-skills, app-experience, 
+  app-education, app-projects {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .resume-content {
+    flex-direction: column;
+  }
+/*
+  .left-column, .right-column {
+    width: 100%;
+  } */
+}
+
+/* Global element styles */
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animation for section loading */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: fadeIn 0.5s ease-out;
+}
