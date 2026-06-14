@@ -33,9 +33,9 @@ export class ProjectsComponent {
         'Mark tasks as completed'
       ],
       // role: 'Frontend Lead',
-      date: '2025',
+      date: '2026',
       liveUrl: 'https://tasks-demo-swart.vercel.app',
- //     codeUrl: 'https://github.com/yourusername/task-manager'
+      codeUrl: 'https://github.com/edwin6709/tasks-demo'
     },
 
     {
@@ -48,30 +48,30 @@ export class ProjectsComponent {
         'Responsive design',
         'User-friendly interface'
       ],
-      date: '2025',
+      date: '2026',
       liveUrl: 'https://essay-improver-one.vercel.app/',
+      codeUrl: 'https://github.com/edwin6709/essay-improver'
     },
 
-
-   /*
     //Add when ready
  
     {
-      title: 'Weather Dashboard',
-      description: 'Interactive weather application with forecasts, maps, and historical data.',
-      technologies: ['Angular', 'Weather API', 'Chart.js', 'Geolocation API'],
+      title: 'Yelp Camp',
+      description: 'Full stack web app that allows users to review a campground.',
+      technologies: ['Angular', 'Mongo DB', 'Node', 'Express', 'Mapbox'],
       features: [
-        '5-day forecasts',
-        'Interactive weather maps',
-        'Location-based services',
-        'Customizable dashboard'
+        'Store user credentials',
+        'Full CRUD functionality using Mongo DB',
+        'Location based services using Mapbox',
+        'Upload and delete pictures',
+        'Error handling'
       ],
       role: 'Solo Developer',
-      date: '2021',
-      liveUrl: 'https://weather-demo.example.com',
-      codeUrl: 'https://github.com/yourusername/weather-app'
+      date: '2026',
+      liveUrl: 'https://yelp-camp-tau-gold.vercel.app/',
+      codeUrl: 'https://github.com/edwin6709/YelpCamp'
     }
-  */
+  
   ];
 
   activeProjectIndex: number | null = null;

@@ -37,22 +37,21 @@ export class SkillsComponent {
       name: 'Backend Development',
       icon: '⚙️',
       skills: [
-        { name: 'Python', level: 3, years: 2, lastUsed: '2021' },
-        { name: 'Java', level: 3, years: 1, lastUsed: '2021' }
+        { name: 'Javascript', level: 3, years: 1, lastUsed: 'current' }
       ]
     },
     {
       name: 'Database & ORM',
       icon: '🗄️',
       skills: [
-        { name: 'MySQL', level: 2, years: 1, lastUsed: '2020' },
+        { name: 'Mongo DB', level: 3, years: 3, lastUsed: 'current' },
       ]
     },
     {
       name: 'DevOps & Cloud',
       icon: '☁️',
       skills: [
-        { name: 'Git', level: 3, years: 2, lastUsed: 'current' }
+        { name: 'Git', level: 5, years: 4, lastUsed: 'current' }
       ]
     }
   ];

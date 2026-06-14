@@ -29,15 +29,19 @@ export class ExperienceComponent implements OnInit {
       location: 'Remote',
       technologies: ['Angular 14+', 'Jira', 'AWS'],
       responsibilities: [
-        'Developed user facing fintech applications using HTML, CSS, and ensuring ADA compliance' + 
-        ' and scalability.',
-        'Led CRM integration for Rathbones (key client) contributing as a product specialist.',
+        'Engineered over 10 scalable ADA compliant (WCAG 2.1) web applications for the fintech' + 
+        ' platform using, HTML5, CSS3, and JavaScript that support over 10,000 end users.',
+        'Led front end development for a key UK client, Rathbones. Built and integrated' +
+        ' custom CRM solutions that were featured in Business Wire. Served' + 
+        'as the primary technical point of contact through the engagement.',
         'Able to be independent, trustworthy, and meet deadlines while working remotely.',
-        'Collaborated with multiple cross functional teams to deliver critical ' + 
-        'features of more than 2 weeks ahead of deadline using Jira/Agile.',
-        'Write/Maintain developer friendly code that can be understood for future developers.',
-        'Used browser based development tools such as Chrome Dev tools, Firefox, and Safari to troubleshoot.',
-        'Cross-browser test using real devices as well as Browser Stack.'
+        'Used browser based development tools using Chrome Dev tools, Firefox, and Safari to' + 
+        'debug and resolve front end issues across multiple environments.',
+        'Cross-browser test using real devices as well as Browser Stack.',
+        'Accelerated project timelines by collaborating within Agile cross functional teams (back' +
+        'end, QA, and UX) to deliver critical Client Management Lifecycle feature 2 weeks ahead of schedule',
+        'Maintain developer friendly code that can be reused for future developers as' +
+        'well as writing documentation.'
       ]
     },
     // Corona Motors Direct
