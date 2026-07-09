@@ -45,6 +45,7 @@ export class SkillsComponent {
       icon: '🗄️',
       skills: [
         { name: 'Mongo DB', level: 3, years: 3, lastUsed: 'current' },
+        { name: 'SQL', level: 4, years: 4, lastUsed: '2025' },
       ]
     },
     {
